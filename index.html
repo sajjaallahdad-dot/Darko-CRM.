@@ -1,23 +1,65 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f5f0e7"><title>منوی دارکو | Darco</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4eee3">
+<meta name="description" content="منوی آنلاین کافه و رستری دارکو">
+<title>منوی دارکو | DARCO COFFEE ROASTERY</title>
 <style>
-:root{--cream:#f5f0e7;--ink:#171717;--red:#c8322b;--muted:#77736c;--line:#e4ddd1;--white:#fffdf8}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,Arial,sans-serif}header{padding:26px 20px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px;max-width:1000px;margin:auto}.brand{font-weight:900;font-size:25px;letter-spacing:2px}.brand span{color:var(--red)}.tag{font-size:12px;color:var(--muted);margin-top:7px}.top-note{font-size:12px;border:1px solid var(--line);padding:8px 12px;border-radius:99px}main{max-width:1000px;margin:auto;padding:24px 18px 50px}.intro{margin:12px 0 24px}.intro h1{font-size:clamp(25px,5vw,40px);margin:0 0 8px;letter-spacing:-1px}.intro p{color:var(--muted);margin:0;line-height:1.9}.categories{display:flex;gap:8px;overflow:auto;padding:4px 0 18px}.cat{border:1px solid var(--line);background:transparent;padding:10px 16px;border-radius:99px;white-space:nowrap;cursor:pointer;font:inherit}.cat.active{background:var(--ink);color:white;border-color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:15px}.item{background:var(--white);border:1px solid var(--line);border-radius:17px;overflow:hidden}.photo{height:180px;background:#e9e1d5;display:grid;place-items:center;color:#9a8e7d;font-size:12px;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover}.details{padding:15px}.name-row{display:flex;align-items:start;justify-content:space-between;gap:8px}.name{font-size:17px;font-weight:800;margin:0}.price{font-size:15px;font-weight:900;color:var(--red);white-space:nowrap}.desc{font-size:12px;color:var(--muted);line-height:1.9;margin:10px 0 0;min-height:24px}.empty,.loading{padding:35px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:16px;grid-column:1/-1}.footer{text-align:center;color:var(--muted);font-size:11px;padding:28px 10px 8px}.dot{display:inline-block;width:7px;height:7px;background:var(--red);border-radius:50%;margin-left:7px}@media(max-width:480px){header{padding:20px 16px}.top-note{display:none}.photo{height:160px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.details{padding:12px}.name{font-size:14px}.price{font-size:12px}.desc{font-size:11px}.photo{height:135px}}
-</style></head>
+:root{--cream:#f4eee3;--paper:#fffdf8;--ink:#211d19;--red:#a94d36;--muted:#81786d;--line:#e4dacb;--soft:#eee4d6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,Arial,sans-serif}
+header{max-width:1100px;margin:auto;padding:26px 22px 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--ink);gap:16px}
+.logo{font:700 24px Georgia,serif;letter-spacing:4px;direction:ltr}.logo span{color:var(--red)}.sub{font-size:10px;letter-spacing:3px;color:var(--muted);margin-top:7px;direction:ltr}
+.header-note{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:9px 13px;border-radius:30px}
+main{max-width:1100px;margin:auto;padding:30px 22px 60px}.hero{padding:8px 0 26px}.eyebrow{font-size:11px;letter-spacing:3px;color:var(--red);direction:ltr;text-align:right}.hero h1{font-size:clamp(32px,6vw,54px);margin:10px 0 8px;font-weight:900}.hero p{font-size:13px;color:var(--muted);line-height:2;margin:0}
+.tools{display:flex;gap:12px;align-items:center;margin:10px 0 18px}.search{flex:1;min-width:0;border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:13px 15px;font:inherit;font-size:13px;outline:none}.search:focus{border-color:var(--red)}
+.categories{display:flex;gap:8px;overflow-x:auto;padding:4px 0 20px;scrollbar-width:thin}.cat{flex:0 0 auto;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:30px;padding:10px 15px;font:inherit;font-size:12px;cursor:pointer;transition:.2s}.cat.active,.cat:hover{background:var(--ink);color:white;border-color:var(--ink)}
+.section{margin:16px 0 32px;scroll-margin-top:15px}.section-head{display:flex;align-items:center;gap:14px;margin:0 0 15px}.section-head h2{font-size:20px;color:var(--red);margin:0;white-space:nowrap}.section-head:after{content:"";height:1px;background:var(--line);flex:1}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.item{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:15px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:66px}.name{font-size:14px;font-weight:700;line-height:1.7}.price{color:var(--red);font-size:13px;font-weight:800;white-space:nowrap}.unit{font-size:10px;color:var(--muted);font-weight:400}
+.beans{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13px}.beans th,.beans td{padding:14px 12px;text-align:center;border-bottom:1px solid var(--line)}.beans th{color:var(--red);font-weight:700;background:#f8f3eb}.beans tr:last-child td{border-bottom:0}
+.empty{padding:30px;text-align:center;color:var(--muted);grid-column:1/-1}.footer{border-top:1px solid var(--ink);padding:22px 0 0;text-align:center;color:var(--muted);font-size:10px;letter-spacing:2px;direction:ltr}
+.hidden{display:none!important}
+@media(max-width:720px){header{padding:20px 16px}.header-note{display:none}main{padding:22px 16px 40px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.item{padding:12px;min-height:62px}.name{font-size:12px}.price{font-size:12px}.section-head h2{font-size:18px}}
+@media(max-width:390px){.grid{grid-template-columns:1fr}.hero h1{font-size:34px}.beans{font-size:11px}.beans th,.beans td{padding:11px 7px}}
+</style>
+</head>
 <body>
-<header><div><div class="brand">DARCO<span>.</span></div><div class="tag">COFFEE · ROASTERY · GILAVAND</div></div><div class="top-note"><span class="dot"></span> منوی به‌روز دارکو</div></header>
-<main><section class="intro"><h1>منوی دارکو</h1><p>برای انتخاب قهوه‌ی بعدی‌ات، بگرد و پیدا کن.</p></section><nav class="categories" id="categories" aria-label="دسته‌بندی‌ها"><button class="cat active" data-id="all">همه</button></nav><section class="grid" id="items"><div class="loading">در حال دریافت منو…</div></section><div class="footer">DARCO ROASTERY · Fresh coffee, bold character.</div></main>
-<script type="module">
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
-const SUPABASE_URL='https://jcpdzqilnhnljvrfsjug.supabase.co';
-const SUPABASE_KEY='sb_publishable_IsYn6XHFo7AUOfE0BDyfZA_sjavx6Vr';
-const db=createClient(SUPABASE_URL,SUPABASE_KEY);
-const $=s=>document.querySelector(s);let active='all',categories=[],items=[];
-const money=n=>new Intl.NumberFormat('fa-IR').format(Number(n)||0)+' تومان';
-function imageUrl(path){if(!path)return '';return db.storage.from('menu-images').getPublicUrl(path).data.publicUrl}
-function renderCats(){const nav=$('#categories');nav.innerHTML='';[['all','همه'],...categories.map(c=>[c.id,c.name])].forEach(([id,name])=>{const b=document.createElement('button');b.className='cat'+(active===id?' active':'');b.textContent=name;b.onclick=()=>{active=id;renderCats();renderItems()};nav.append(b)})}
-function renderItems(){const root=$('#items');root.innerHTML='';const shown=items.filter(i=>active==='all'||i.category_id===active);if(!shown.length){root.innerHTML='<div class="empty">هنوز آیتمی برای نمایش ثبت نشده است.</div>';return}shown.forEach(i=>{const card=document.createElement('article');card.className='item';const ph=document.createElement('div');ph.className='photo';if(i.image_path){const img=document.createElement('img');img.loading='lazy';img.alt=i.name;img.src=imageUrl(i.image_path);img.onerror=()=>{ph.textContent='DARCO COFFEE'};ph.append(img)}else ph.textContent='DARCO COFFEE';const d=document.createElement('div');d.className='details';const row=document.createElement('div');row.className='name-row';const h=document.createElement('h2');h.className='name';h.textContent=i.name;const p=document.createElement('div');p.className='price';p.textContent=money(i.price);row.append(h,p);const desc=document.createElement('p');desc.className='desc';desc.textContent=i.description||'';d.append(row,desc);card.append(ph,d);root.append(card)})}
-async function load(){const [c,i]=await Promise.all([db.from('menu_categories').select('id,name,slug,sort_order').eq('is_active',true).order('sort_order'),db.from('menu_items').select('id,category_id,name,description,price,image_path,sort_order').eq('is_available',true).order('sort_order')]);if(c.error||i.error){$('#items').innerHTML='<div class="empty">فعلاً دریافت منو ممکن نیست. لطفاً کمی بعد دوباره تلاش کنید.</div>';console.error(c.error||i.error);return}categories=c.data||[];items=i.data||[];renderCats();renderItems()}load();
-</script></body></html>
+<header><div><div class="logo">DARCO<span>.</span></div><div class="sub">COFFEE ROASTERY</div></div><div class="header-note">کافه و رستری دارکو · گیلاندر</div></header>
+<main>
+<section class="hero"><div class="eyebrow">COFFEE · ROASTERY · EXPERIENCE</div><h1>منوی دارکو</h1><p>یک انتخاب تازه، یک تجربه‌ی تازه.<br>دسته‌بندی موردنظرت رو انتخاب کن و منو رو ببین.</p></section>
+<div class="tools"><input class="search" id="search" type="search" placeholder="جست‌وجوی نوشیدنی یا محصول..." aria-label="جست‌وجو"></div>
+<nav class="categories" id="categories" aria-label="دسته‌بندی منو"></nav>
+<div id="menu"></div>
+<section class="section" id="beans"><div class="section-head"><h2>دان قهوه</h2></div>
+<div style="overflow-x:auto"><table class="beans"><thead><tr><th>نوع قهوه</th><th>۲۵۰ گرم</th><th>۵۰۰ گرم</th><th>۱ کیلو</th></tr></thead><tbody>
+<tr><td>ماراگو</td><td>۷۰۰</td><td>۱٬۸۲۰</td><td>۲٬۵۰۰</td></tr>
+<tr><td>توکیو</td><td>۸۰۰</td><td>۱٬۵۵۰</td><td>۳٬۱۰۰</td></tr>
+<tr><td>ریو</td><td>۹۵۰</td><td>۱٬۸۲۰</td><td>۳٬۶۵۰</td></tr>
+<tr><td>دارکو</td><td>۱٬۲۰۰</td><td>—</td><td>—</td></tr>
+</tbody></table></div></section>
+<div class="footer">DARCO COFFEE ROASTERY · FRESH COFFEE, BOLD CHARACTER</div>
+</main>
+<script>
+const data=[
+{name:"اسپرسو بار",items:[["اسپرسو","۲۰۰"],["آمریکانو","۲۵۰"],["رومانو","۲۷۰"],["کورتادو","۲۸۰"],["کاپوچینو","۳۲۰"],["لته","۳۰۰"],["لته طعم‌دار","۳۷۰"],["موکا","۳۷۰"],["کارامل ماکیاتو","۳۷۰"],["ترک","۲۵۰"],["یونانی","۲۷۰"],["یوزو کافی","۳۵۰"],["سینامون","۲۳۰"]]},
+{name:"چاکلت بار",items:[["هات چاکلت","۲۵۰"],["وایت چاکلت","۳۵۰"],["پینک چاکلت","۲۵۰"],["پینک چاکلت مارشمالو","۳۵۰"],["مینت چاکلت","۳۰۰"],["دارکو چاکلت","۴۰۰"]]},
+{name:"بار گرم",items:[["چای کرک","۲۵۰"],["چای ماسالا","۲۵۰"],["شیر نوتلا","۳۷۰"],["شیر کاکائو","۱۷۰"],["شیر دارچین","۱۷۰"],["چای کاراملی","۳۰۰"]]},
+{name:"کافی بار سرد",items:[["آیس آمریکانو","۲۷۰"],["آیس لته","۲۷۰"],["آیس موکا","۳۷۰"],["آیس کارامل ماکیاتو","۳۷۰"],["آیس لته منگو","۳۷۰"],["آیس استرابری","۳۷۰"],["آیس بلک","۳۷۰"],["آیس تونیک","۳۹۰"]]},
+{name:"بر پایه اسپیرولینا",items:[["آیس اسپیرولینا","۳۵۰"],["اسپیرولینا منگو","۴۵۰"],["اسپیرولینا استرابری","۴۲۰"],["اسپیرولینا لته","۴۲۰"]]},
+{name:"بر پایه ماچا",items:[["آیس ماچا","۳۸۰"],["آیس ماچا منگو","۵۰۰"],["ماچا استرابری","۴۵۰"],["ماچا پامکین","۴۵۰"]]},
+{name:"ماکتیل",items:[["جوسی جوی","۴۰۰"],["دارکو بری","۴۰۰"],["تیکی تایم","۴۰۰"],["لوکیتا","۴۰۰"],["فیونا","۴۰۰"],["سان‌ست","۴۰۰"]]},
+{name:"موهیتو و لیموناد",items:[["موهیتو","۴۰۰"],["موهیتو بلو","۴۰۰"],["موهیتو رد","۴۰۰"],["لیموناد","۴۰۰"],["بلو لیموناد","۴۰۰"],["رد لیموناد","۴۰۰"]]},
+{name:"کیک و چیزکیک",items:[["کیک موکا","۳۰۰"],["کیک رد ولوت","۳۰۰"],["کیک سیب","۳۰۰"],["چیزکیک لوتوس","۳۰۰"]]},
+{name:"سیروپ",items:[["کارامل","۷۰"],["وانیل","۷۰"],["پامکین","۷۰"],["نارگیل","۷۰"],["لوندر","۷۰"],["شکلات","۷۰"],["آیریش","۷۰"],["دارچین","۷۰"],["کوکی","۷۰"]]}
+];
+const cats=document.getElementById('categories'),root=document.getElementById('menu'),search=document.getElementById('search');let active='همه';
+function render(){cats.innerHTML='';['همه',...data.map(x=>x.name),'دان قهوه'].forEach(name=>{const b=document.createElement('button');b.className='cat'+(active===name?' active':'');b.textContent=name;b.onclick=()=>{active=name;render()};cats.appendChild(b)});
+root.innerHTML='';const q=search.value.trim().toLocaleLowerCase('fa');let count=0;
+data.forEach(section=>{if(active!=='همه'&&active!==section.name)return;const items=section.items.filter(([n,p])=>n.toLocaleLowerCase('fa').includes(q));if(!items.length)return;count+=items.length;const el=document.createElement('section');el.className='section';const head=document.createElement('div');head.className='section-head';const h=document.createElement('h2');h.textContent=section.name;head.append(h);const grid=document.createElement('div');grid.className='grid';items.forEach(([name,price])=>{const card=document.createElement('article');card.className='item';const n=document.createElement('div');n.className='name';n.textContent=name;const p=document.createElement('div');p.className='price';p.textContent=price;card.append(n,p);grid.append(card)});el.append(head,grid);root.append(el)});
+if(!count){const e=document.createElement('div');e.className='empty';e.textContent='موردی با این عبارت پیدا نشد.';root.append(e)}
+document.getElementById('beans').classList.toggle('hidden',!(active==='همه'||active==='دان قهوه')||!!q);
+}
+search.addEventListener('input',render);render();
+</script>
+</body></html>
